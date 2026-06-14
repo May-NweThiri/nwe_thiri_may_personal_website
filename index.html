@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nwe Thiri May | ML Engineer & Data Scientist</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      (function () {
+        var t = document.documentElement,
+          e = localStorage.getItem("portfolio-theme");
+        if (e === "light" || e === "dark") t.setAttribute("data-theme", e);
+        else if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches
+        )
+          t.setAttribute("data-theme", "light");
+        else t.setAttribute("data-theme", "dark");
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <header class="header">
+      <nav class="nav">
+        <a href="#home" class="logo">Nwe Thiri May</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle light/dark mode"
+          title="Toggle theme"
+        >
+          <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true"
+            >☀️</span
+          >
+          <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true"
+            >🌙</span
+          >
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="profile-image-wrap">
+            <img
+              src="assets/profile.jpg"
+              alt="Nwe Thiri May"
+              class="profile-image"
+              onerror="
+                this.src = 'https://placehold.co/400x400/1a1a2e/eee?text=May'
+              "
+            />
+          </div>
+          <h1 class="typing-name">Nwe Thiri May</h1>
+          <p class="tagline">
+            <span id="rotatingTagline"></span>
+          </p>
+          <p class="hero-bio">
+           I am an entrepreneurial technology professional and Product Lead with a proven track record of founding, 
+           scaling, and managing data-driven platforms. My expertise bridges end-to-end full-stack software development, 
+           advanced data pipelines, and intelligent agentic AI architectures. 
+           As a founder, I have scale-built cross-functional teams, expanded business operations internationally into Europe, 
+           and led the product delivery of multiple B2B software applications—including evaluation-backed revenue analytics 
+           platforms driven by LLMs. I excel at translating complex data patterns and business strategies into scalable technical solutions, 
+           designing rigorous AI evaluation frameworks, and leading agile teams to build products that solve high-impact, real-world problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" id="contactBtn"
+              >Get in touch</a
+            >
+            <a
+              href="https://www.linkedin.com/in/nwe-thiri-may-403589174/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About me</h2>
+
+        <div class="about-layout">
+          <!-- LEFT SIDE -->
+          <div class="about-left">
+            <div class="about-card">
+              <h3>Education</h3>
+              <ul class="about-list">
+                <li>
+                  <strong
+                    >B.Sc. Computer Science (Digital Business and Data
+                    Science)</strong
+                  ><br />
+                  University of Europe for Applied Science, Potsdam, Germany
+                  (2025)
+                </li>
+
+                <li>
+                  <strong>B.Sc. Chemistry</strong><br />
+                  Yangon University of Distance Education, Yangon, Myanmar
+                  (2009)
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-card">
+              <h3>Professional Certificates</h3>
+
+              <ul class="about-list">
+                <li>Data Analytics with AI – Professional Certificate</li>
+                <li>Generative AI in Practice – Professional Certificate</li>
+                <li>
+                  Foundations of Project Management – Google Professional
+                  Certificate
+                </li>
+                <li>Introduction to Jira – Atlassian Certification</li>
+                <li>Advanced Business Statistics – Professional Training</li>
+              </ul>
+
+              <p>These certificates highlight skills in:</p>
+
+              <ul class="about-list">
+                <li>AI & Data Analytics (Simple learn)</li>
+                <li>Project Management (Google)</li>
+                <li>Agile Tools (Google)</li>
+                <li>Introduction of Jira (Atlassian)</li>
+                <li>Vibe coding with Cursor AI (SCRIMBA)</li>
+                <li>Statistical Analysis (Coursea)</li>
+                <li>Modern AI workflows (Simple learn)</li>
+                <li>Introduction to LLM (Google Cloud)</li>
+              </ul>
+            </div>
+
+            <div class="about-card">
+              <h3>Product Management & Strategy</h3>
+            <ul>
+              <li>Product Roadmap Ownership & Vision</li>
+              <li>Technical Product Specifications (PRDs)</li>
+              <li>Agile/Scrum Frameworks (Jira, Sprint Planning)</li>
+              <li>Product-Led Growth (PLG) & Engagement Metrics</li>
+              <li>User Discovery & Cross-Functional Leadership[cite: 1]</li>
+            </ul>
+            <h3>Business Leadership & Execution</h3>
+            <ul>
+              <li>Founder Mindset & High-Agency Execution[cite: 1]</li>
+              <li>International Business Expansion & Partnership Management[cite: 1]</li>
+              <li>Quantitative Analysis & Data-Driven Problem Solving[cite: 1]</li>
+              <li>Cross-Cultural Collaboration (English C1, German B2 in progress)[cite: 1]</li>
+              <li>Operations Management & Budget Optimization[cite: 1]</li>
+            </ul>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="about-right">
+            <div class="about-card tech-card">
+              <h3>Technical skills</h3>
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python"
+                  />
+                  <span>Python</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-keras-plain colored"></i>
+                  <span>ML pipelines</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-keras-plain colored"></i>
+                  <span>LLM</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-numpy-plain colored"></i>
+                  <span>NumPy</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-python-plain colored"></i>
+                  <span>NLP</span>
+                </div>
+
+                <div class="tech-item">
+                  <i class="devicon-pandas-plain"></i>
+                  <span>Pandas</span>
+                </div>
+
+                <div class="tech-item">
+                  <i class="devicon-scikitlearn-plain"></i>
+                  <span>Scikit-learn</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-python-plain colored"></i>
+                  <span>Sentiment Analysis</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-tensorflow-original colored"></i>
+                  <span>TensorFlow</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-pytorch-original colored"></i>
+                  <span>PyTorch</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-html5-plain colored"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-css3-plain colored"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-tailwindcss-plain colored"></i>
+                  <span>Tailwind</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-mysql-original colored"></i>
+                  <span>SQL</span>
+                </div>
+
+                <div class="tech-item">
+                  <i class="devicon-mongodb-plain colored"></i>
+                  <span>Mongodb</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-postgresql-plain colored"></i>
+                  <span>PostgreSQL</span>
+                </div>
+
+                <div class="tech-item">
+                  <i class="devicon-nextjs-original-wordmark"></i>
+                  <span>NextJS</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-react-original colored"></i>
+                  <span>React</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="tech-item">
+                  <i
+                    class="devicon-amazonwebservices-plain-wordmark colored"
+                  ></i>
+                  <span>AWS</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-postman-plain colored"></i>
+                  <span>Postman</span>
+                </div>
+                <div class="tech-item">
+                  <img
+                    src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg"
+                    alt="Tableau"
+                  />
+                  <span>Tableau</span>
+                </div>
+                <div class="tech-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                    alt="Figma"
+                  />
+                  <span>Figma</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-git-plain colored"></i>
+                  <span>Git</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-jira-plain colored"></i>
+                  <span>Jira</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-notion-plain colored"></i>
+                  <span>Notion</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-card">
+              <h3>Hobby</h3>
+
+              <ul class="about-list">
+                <li>Drawing & Painting</li>
+                <li>Traveling</li>
+                <li>Gym</li>
+                <li>Cooking</li>
+                <li>Reading</li>
+                <li>Waching movie</li>
+                <li>Gathering with people</li>
+              </ul>
+            </div>
+
+            <div class="about-card">
+              <h3>Languages</h3>
+              <ul class="about-list">
+                <li>English (Business)</li>
+                <li>German (B1)</li>
+                <li>Burmese (Mother tongue)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-alt">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <!-- Junior Software Engineer -->
+          <article class="timeline-item">
+            <h3>Founder & Product lead | TechHive Innovation</h3>
+            <p class="meta">
+              Bangkok, Thailand  | May 2025 – Present
+            </p>
+            <ul>
+             <li>
+                Founded a specialized edtech and small-business development studio, scale-building a 6-person cross-functional engineering and marketing team from the ground up.
+              </li>
+              <li>
+                Led the end-to-end product delivery of 5 B2B software applications[cite: 1], including **FinX AI**, an AI-powered revenue analytics platform that automates data parsing, KPI dashboard generation, and chat-driven data querying.
+              </li>
+              <li>
+                Architected a robust, multi-layer text-and-monetary column detection engine using keyword heuristics, strict numeric-type guards, and case/whitespace-insensitive grouping to accurately deduplicate messy real-world transaction logs.
+              </li>
+              <li>
+                Engineered an automated data-quality and evaluation harness (`run_evaluation.py`) that executes algorithmic accuracy validations against multi-variant ground-truth datasets, achieving a 100% exact-match rate on metric calculations and column role assignments.
+              </li>
+              <li>
+                Designed a production-ready, highly parallel infrastructure utilizing Next.js 14 on Vercel, a FastAPI gateway dockerized on Railway, Supabase PostgreSQL connection pooling, and the Gemini API via an OpenAI-compatible SDK fallback workflow.
+              </li>
+              <li>
+                Managed product requirement documents (PRDs), roadmap priorities, UX/UI layouts in Figma, and Agile sprint lifecycles in Jira[cite: 1] while resolving continuous integration bottlenecks, CORS handling policies, and private cloud storage fallbacks.
+              </li>
+            </ul>
+          </article>
+
+        
+
+          <!-- General Manager -->
+          <article class="timeline-item">
+            <h3>General Manager | New Vision Art & Science Institute</h3>
+            <p class="meta">Yangon, Myanmar | 2016 – 2026</p>
+            <ul>
+              <li>
+                Founded and scaled an enterprise-level education institute for architecture, design, and technology programs, expanding operations across 7 regional branches and generating €150k in annual revenue[cite: 1].
+              </li>
+              <li>
+                Expanded business capabilities by launching an international overseas educational consultancy service, establishing strategic partnerships and direct pipelines with universities across Europe to facilitate student placement.
+              </li>
+              <li>
+                Grew the institution to support over 10,000+ all-time students and 1,800 annual enrollments, directing a cross-functional 16-person team across academic instruction, international consulting, marketing, and administration[cite: 1].
+              </li>
+              <li>
+                Spearheaded the product strategy and development of internal digital tools to automate school operations, optimizing scheduling, student onboarding, and multi-branch revenue tracking workflows[cite: 1].
+              </li>
+              <li>
+                Personally designed and engineered automated ETL pipelines to process over 50,000+ student and marketing records daily, eliminating data ingestion bottlenecks and lifting internal data accuracy from 87% to 98%[cite: 1].
+              </li>
+              <li>
+                Developed advanced predictive models and targeted customer segmentation strategies using Python and Pandas to analyze audience behaviors, directly contributing to a 15% boost in enrollment revenue[cite: 1].
+              </li>
+              <li>
+                Built 8 interactive executive Tableau dashboards to synthesize complex student lifecycles and marketing KPIs, translating high-volume raw data into actionable insights for operational planning[cite: 1].
+              </li>
+              <li>
+                Oversaw end-to-end business operations, including multi-branch budgeting, vendor negotiations, European university compliance, and quarterly sales strategies, consistently hitting 75%–134% of monthly revenue targets[cite: 1].
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+
+        <p class="section-intro">
+          Selected work from
+          <a
+            href="https://github.com/May-NweThiri"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >. Images from
+          <a href="https://unsplash.com" target="_blank" rel="noopener"
+            >Unsplash</a
+          >.
+        </p>
+
+        <div class="projects-grid">
+          <!-- PROJECT 1 -->
+          <article class="project-card">
+            <div class="project-flip">
+              <!-- FRONT -->
+              <div class="project-front">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                  alt="Data analytics and charts"
+                  class="project-image"
+                />
+                <div class="project-front-content">
+                  <h3>Sentiment Analysis on Amazon Reviews</h3>
+                  <span class="badge">Bachelor Thesis 2025</span>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="project-back">
+                <h3>Sentiment Analysis</h3>
+                <p>
+                  Built sentiment analysis pipeline using VADER and RoBERTa on
+                  560,000+ Amazon reviews. Compared model performance and
+                  achieved RoBERTa F1 score of 0.85.
+                </p>
+
+                <p class="project-tech">
+                  Python • NLP • VADER • RoBERTa • Pandas
+                </p>
+
+                <a
+                  href="https://github.com/May-NweThiri/Bachelor-Thesis-A-Comparative-Study-of-RoBERTa-and-VADER-"
+                  target="_blank"
+                  class="project-link"
+                >
+                  View on GitHub →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+            <div class="project-flip">
+              <!-- FRONT -->
+              <div class="project-front">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                  alt="Analytics dashboard"
+                  class="project-image"
+                />
+                <div class="project-front-content">
+                  <h3>YouTube Channel Data Analysis</h3>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="project-back">
+                <h3>YouTube Data Analysis</h3>
+
+                <p>
+                  Analyzed 140 YouTube videos using Python and statistical
+                  methods to discover engagement trends and optimal posting
+                  times.
+                </p>
+
+                <p class="project-tech">
+                  Python • Pandas • Matplotlib • WordCloud • K-Means
+                </p>
+
+                <a
+                  href="https://github.com/May-NweThiri/Analyzing-and-visualizing-data-from-YouTube-"
+                  target="_blank"
+                  class="project-link"
+                >
+                  View on GitHub →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+            <div class="project-flip">
+              <!-- FRONT -->
+              <div class="project-front">
+                <img
+                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80"
+                  alt="Mobile application"
+                  class="project-image"
+                />
+                <div class="project-front-content">
+                  <h3>CheckIn Mobile Application</h3>
+                  <span class="badge">In Development</span>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="project-back">
+                <h3>CheckIn Mobile App</h3>
+
+                <p>
+                  Building attendance and employee tracking mobile application
+                  using modern development practices with Git, Agile workflow,
+                  and code reviews.
+                </p>
+
+                <p class="project-tech">
+                  React Native • NestJS • PostgreSQL • REST API
+                </p>
+
+                <span class="project-link project-link-muted">
+                  Repo coming soon
+                </span>
+              </div>
+            </div>
+          </article>
+          <!-- PROJECT 4 -->
+          <article class="project-card">
+            <div class="project-flip">
+              <div class="project-front">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                  alt="Data cleaning and analytics"
+                  class="project-image"
+                />
+                <div class="project-front-content">
+                  <h3>Amazon Dataset Deep Data Cleaning</h3>
+                </div>
+              </div>
+
+              <div class="project-back">
+                <h3>Amazon Data Cleaning Pipeline</h3>
+
+                <p>
+                  Cleaned and prepared multiple Amazon datasets including
+                  customers, orders, deliveries, products, and stock using
+                  Python and Pandas. Implemented structured data cleaning
+                  workflows to handle missing values, standardize formats, and
+                  recalculate key pricing fields.
+                </p>
+
+                <p class="project-tech">
+                  Python • Pandas • Data Cleaning • ETL
+                </p>
+
+                <span class="project-link project-link-muted">
+                  Repo coming soon
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5 -->
+          <article class="project-card">
+            <div class="project-flip">
+              <div class="project-front">
+                <img
+                  src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800&q=80"
+                  alt="Image search interface"
+                  class="project-image"
+                />
+                <div class="project-front-content">
+                  <h3>Unsplash Image Explorer</h3>
+                </div>
+              </div>
+
+              <div class="project-back">
+                <h3>Unsplash Image Explorer</h3>
+
+                <p>
+                  Built a dynamic React-based image search engine using the
+                  Unsplash API. Implemented real-time search, responsive masonry
+                  layout, and optimized API calls using debouncing to improve
+                  performance and user experience.
+                </p>
+
+                <p class="project-tech">
+                  React • JavaScript • Unsplash API • CSS
+                </p>
+
+                <span class="project-link project-link-muted">
+                  Repo coming soon
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6 -->
+          <article class="project-card">
+            <div class="project-flip">
+              <div class="project-front">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
+                  alt="AI computer vision system"
+                  class="project-image"
+                />
+                <div class="project-front-content">
+                  <h3>"What Animal Are You?"</h3>
+                  <h3>AI Check-In</h3>
+                  <span class="badge">In Development</span>
+                </div>
+              </div>
+
+              <div class="project-back">
+                <h3>AI Check-In System</h3>
+
+                <p>
+                  Developing an AI-powered attendance system that assigns a
+                  daily "Animal Persona" using selfie-based computer vision.
+                  Implemented FaceNet embeddings for identity verification and
+                  built an ML pipeline with TensorFlow, FastAPI, and PostgreSQL.
+                </p>
+
+                <p class="project-tech">
+                  TensorFlow • OpenCV • MediaPipe • FastAPI • PostgreSQL
+                </p>
+
+                <span class="project-link project-link-muted">
+                  Repo coming soon
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="contact-container">
+          <!-- LEFT -->
+          <div class="contact-info">
+            <h3>Get in touch</h3>
+            <p>
+              Feel free to reach out for collaborations, job opportunities, or
+              just a friendly chat.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:thiri.jewel.14@gmail.com">📨 Email</a>
+              <a href="tel:+4917684619518">📱 Phone</a>
+              <a
+                href="https://www.linkedin.com/in/nwe-thiri-may-403589174/"
+                target="_blank"
+                ><i class="devicon-linkedin-plain colored"></i> LinkedIn</a
+              >
+              <a href="https://github.com/May-NweThiri" target="_blank">
+                <i class="devicon-github-original github-icon"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <form id="contactForm" class="contact-form">
+            <h3>Contact Me</h3>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here... "
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Nwe Thiri May. All rights reserved.</p>
+    </footer>
+
+    <!-- Profile AI Chatbot -->
+    <div id="chatbotRoot" class="chatbot-root" aria-hidden="true">
+      <button
+        type="button"
+        id="chatbotToggle"
+        class="chatbot-toggle"
+        aria-label="Open profile assistant"
+        title="Ask about my profile"
+      >
+        <span class="chatbot-toggle-icon">💬</span>
+      </button>
+      <div
+        id="chatbotPanel"
+        class="chatbot-panel"
+        role="dialog"
+        aria-label="Profile assistant"
+        hidden
+      >
+        <div class="chatbot-header">
+          <h3 class="chatbot-title">Profile assistant</h3>
+          <p class="chatbot-subtitle">Ask me anything about Nwe Thiri May</p>
+          <button
+            type="button"
+            id="chatbotClose"
+            class="chatbot-close"
+            aria-label="Close chat"
+          >
+            ×
+          </button>
+        </div>
+        <div
+          id="chatbotMessages"
+          class="chatbot-messages"
+          role="log"
+          aria-live="polite"
+        ></div>
+        <div class="chatbot-input-wrap">
+          <input
+            type="text"
+            id="chatbotInput"
+            class="chatbot-input"
+            placeholder="e.g. What are her skills? Experience?"
+            autocomplete="off"
+            aria-label="Your question"
+          />
+          <button
+            type="button"
+            id="chatbotSend"
+            class="chatbot-send"
+            aria-label="Send"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="particles-config.js"></script>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="mail.js"></script>
+  </body>
+</html>
